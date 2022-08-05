@@ -73,3 +73,20 @@ main {
     0 0 102px #0f0,
     0 0 151px #0f0;
 }
+
+.neonSmallText {
+  /* font-family: "Yellowtail", sans-serif; */
+  font-family: 'M PLUS Rounded 1c', sans-serif;
+  color: #fff;
+  font-size: 10px;
+  text-shadow:
+    0 0 0.1px #000,
+    0 0 5px #fff,
+    0 0 10px #fff,
+    0 0 21px #fff,
+    0 0 42px #0f0,
+    0 0 82px #0f0,
+    0 0 92px #0f0,
+    0 0 102px #0f0,
+    0 0 151px #0f0;
+}
