@@ -104,3 +104,7 @@ main {
   filter: invert(100%);
   transition: ease 1s;
 }
+
+.icon:hover {
+  filter: invert(10%) drop-shadow(0 0 10px aqua);
+}
