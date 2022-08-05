@@ -122,3 +122,15 @@ main {
 hr {
   height: .5rem;
 }
+
+@keyframes shake {
+  0% {
+    transform: rotate3d(0);
+  }
+  50% {
+    transform: rotate3d(.5, 1, .1, 20deg);
+  }
+  100% {
+    transform: rotate3d(0);
+  }
+}
