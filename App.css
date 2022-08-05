@@ -20,6 +20,13 @@ body {
   align-content: center;
 }
 
+main {
+  height: 400px;
+  width: 300px;
+  text-align: center;
+  animation: shake 10s ease-in-out infinite;
+}
+
 .carbon {
   background-color: rgb(32, 32, 32);
   background-image: linear-gradient(to right, rgba(0,0,0,1), rgba(0,0,0,0) 20%, rgba(0,0,0,0) 80%, rgba(0,0,0,1)),
@@ -29,4 +36,23 @@ body {
 
   background-size: 100% 100%, 10px 10px, 10px 10px, 10px 5px;
   background-position: 0px 0px, 0px 0px, 5px 5px, 0px 0px;
+}
+
+.glass {
+  /* From https://css.glass */
+  /* background: rgba(0, 255, 0, 0.03); */
+  border-radius: 16px;
+  /* box-shadow: 0 0 30px rgba(0, 255, 0, 0.15); */
+  backdrop-filter: blur(2px);
+  -webkit-backdrop-filter: blur(1px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.neonContainer {
+  box-shadow: 0 0 .2rem #fff,
+            0 0 .2rem #fff,
+            0 0 2rem #0f0,
+            0 0 0.8rem #0f0,
+            0 0 2.8rem #0f0,
+            inset 0 0 3.3rem #0f0;
 }
