@@ -134,3 +134,34 @@ hr {
     transform: rotate3d(0);
   }
 }
+
+.loading {
+  position: absolute;
+  animation: onload 3s ease-out 0s 1;
+}
+
+@keyframes onload {
+  0% {
+    width: 100vw;
+    height: 100vh;
+    background-color: #000;
+    opacity: 1;
+  }
+
+  80% {
+    background-color: #000;
+    opacity: 1;
+  }
+
+  99% {
+    opacity: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 100;
+  }
+
+  100% {
+    z-index: -10;
+  }
+  
+}
