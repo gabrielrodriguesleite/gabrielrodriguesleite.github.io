@@ -8,6 +8,9 @@
   /* vertical-align: baseline; */
   background: transparent;
   box-sizing: border-box;
+  word-wrap: none;
+  /* ↓ fix quebra de linha */
+  white-space:nowrap;
 }
 
 body {
@@ -21,8 +24,9 @@ body {
 }
 
 main {
-  height: 400px;
+  /* height: 400px; */
   width: 300px;
+  padding-bottom: 10px;
   text-align: center;
   animation: shake 10s ease-in-out infinite;
 }
