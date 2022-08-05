@@ -108,3 +108,17 @@ main {
 .icon:hover {
   filter: invert(10%) drop-shadow(0 0 10px aqua);
 }
+
+.picture {
+  border-radius: 50%;
+  width: 80%;
+  box-shadow: 0 1px 2px #fff,
+  1px 1px 2px #fff,
+  1px 1px 6px #000,
+  1px 1px 6px #000,
+  1px 1px 6px #000;
+}
+
+hr {
+  height: .5rem;
+}
