@@ -1,3 +1,8 @@
+:root {
+  --varColor: 120;
+  --customColor: hsl(calc(var(--varColor)*1), 100%, 50%);
+}
+
 * {
   /* RESET */
   margin: 0;
@@ -11,6 +16,7 @@
   word-wrap: none;
   /* ↓ fix quebra de linha */
   white-space:nowrap;
+
 }
 
 body {
@@ -54,10 +60,10 @@ main {
 .neonContainer {
   box-shadow: 0 0 .2rem #fff,
             0 0 .2rem #fff,
-            0 0 2rem #0f0,
-            0 0 0.8rem #0f0,
-            0 0 2.8rem #0f0,
-            inset 0 0 3.3rem #0f0;
+            0 0 2rem var(--customColor),
+            0 0 0.8rem var(--customColor),
+            0 0 2.8rem var(--customColor),
+            inset 0 0 3.3rem var(--customColor);
 }
 
 .neonText {
@@ -71,11 +77,11 @@ main {
     0 0 5px #fff,
     0 0 10px #fff,
     0 0 21px #fff,
-    0 0 42px #0f0,
-    0 0 82px #0f0,
-    0 0 92px #0f0,
-    0 0 102px #0f0,
-    0 0 151px #0f0;
+    0 0 42px var(--customColor),
+    0 0 82px var(--customColor),
+    0 0 92px var(--customColor),
+    0 0 102px var(--customColor),
+    0 0 151px var(--customColor);
 }
 
 .neonSmallText {
@@ -88,11 +94,11 @@ main {
     0 0 5px #fff,
     0 0 10px #fff,
     0 0 21px #fff,
-    0 0 42px #0f0,
-    0 0 82px #0f0,
-    0 0 92px #0f0,
-    0 0 102px #0f0,
-    0 0 151px #0f0;
+    0 0 42px var(--customColor),
+    0 0 82px var(--customColor),
+    0 0 92px var(--customColor),
+    0 0 102px var(--customColor),
+    0 0 151px var(--customColor);
 }
 
 .socialContainer {
@@ -172,4 +178,14 @@ hr {
     z-index: -10;
   }
   
+}
+
+@keyframes cC {
+  from {
+    --varColor: 0;
+  }
+
+  to {
+    --varColor: 360;
+  }
 }
