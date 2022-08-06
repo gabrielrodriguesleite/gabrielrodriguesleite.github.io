@@ -33,4 +33,14 @@
         </main>
         <div class="loading"></div>
     </body>
+    <script>
+        const vel = 0.5
+        let v = 0
+        const anim = () => {
+            document.querySelector(':root').style.setProperty('--varColor', v * vel);
+            if ( ++v > 360 / vel) { v = 0 }
+            requestAnimationFrame(anim)
+        }
+        requestAnimationFrame(anim)
+    </script>
 </html>
