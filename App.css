@@ -33,7 +33,7 @@ main {
   /* height: 400px; */
   /* width: 300px; */
   text-align: center;
-  animation: shake 10s ease-in-out infinite;
+  animation: shake 10s ease-in-out 5s infinite;
 }
 
 .carbon {
