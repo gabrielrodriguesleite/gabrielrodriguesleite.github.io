@@ -1,4 +1,4 @@
-# Finaly a README.md
+# Landing page
 
 ## Repo to hold a simple landing page
 
